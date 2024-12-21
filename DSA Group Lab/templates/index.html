@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Web Flask Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="/profile" class="active">Profile</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="#">Works <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="/linkedlist">LinkedList</a>
+                    <a href="/stack">Stack</a>
+                    <a href="/queue">Queue</a> <!-- Link to Queue -->
+                </div>
+            </div>
+            <a href="/contact_us">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Group #3</h3>
+            <h1>Welcome to our Website</h1>
+            <p>We're a group of creative and hardworking individuals who love turning ideas into reality.</p>
+            <p>Check out our projects and get to know the team</p>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Works</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="static/img/1.jpg">
+                <a href="/linkedlist">
+                    <div class="portfolio-layer">
+                        <h4>LinkedList Manager</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="static/img/2.jpg">
+                <a href="/stack">
+                    <div class="portfolio-layer">
+                        <h4>Stack Implementation</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="static/img/3.jpg">
+                <a href="/queue"> <!-- Link to Queue -->
+                    <div class="portfolio-layer">
+                        <h4>Queue</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

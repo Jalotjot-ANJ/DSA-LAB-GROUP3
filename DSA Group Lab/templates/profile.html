@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 3 Members</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='profile_style.css') }}">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <div class="logo">
+        <a href="/">Portfolio</a>
+    </div>
+    <nav>
+        <a href="/profile" class="active">Profile</a>
+        <a href="/#portfolio">Works</a>
+        <a href="/contact_us">Contact Us</a>
+    </nav>
+</header>
+
+
+    <!-- Group Members Section -->
+    <section class="members-section">
+        <h1 class="heading">Group 3 Members</h1>
+        <div class="members-container">
+            <!-- Row 1: 4 Members -->
+            <div class="row">
+                <div class="member">
+                    <img src="{{ url_for('static', filename='nald.jpg') }}" alt="Ronald" class="circle-image">
+                    <p class="member-name"><strong>Leader:</strong><br>De Villa, Ronald Jr.</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='drew.jpg') }}" alt="Andrew" class="circle-image">
+                    <p class="member-name">Bonifacio, Andrew Dominic</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='arbis.jpg') }}" alt="Jefferson" class="circle-image">
+                    <p class="member-name">Arbis, Jefferson</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='jeko.jpg') }}" alt="Jericho" class="circle-image">
+                    <p class="member-name">Villanueva, Jericho</p>
+                </div>
+            </div>
+            <!-- Row 2: 3 Members -->
+            <div class="row second-row">
+                <div class="member">
+                    <img src="{{ url_for('static', filename='anj.png') }}" alt="Arjun" class="circle-image">
+                    <p class="member-name">Jalotjot, Arjun N</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='luis.png') }}" alt="John Michael" class="circle-image">
+                    <p class="member-name">Velasco, John Michael Luis</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='yas.png') }}" alt="Yasser" class="circle-image">
+                    <p class="member-name">Esguerra, Yasser Trevor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

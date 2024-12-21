@@ -1,0 +1,141 @@
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header a.logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+header nav a {
+    color: #ddd;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav a.active, header nav a:hover {
+    color: #fff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    background: none;
+    color: #ddd;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #343a40;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #495057;
+}
+
+pre {
+    background: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
